@@ -2,13 +2,13 @@
 
   # The root directory to perform the pull in
   # $baseDir = ".",
-  $baseDir = "c:\sources",
+  $baseDir = "G:\Meu Drive\SOURCES",
 
   # How deep down you want to look for .git folders
   $depth = 4,
 
   # The command you want to perform
-  $cmd = "status"
+  $cmd = "pull"
 )
 
 function Go () {
@@ -16,7 +16,7 @@ function Go () {
   Write-Host "Searching for git folders in base dir: '$baseDir' ..." -foregroundColor "cyan"
 
   # Finds all .git folders by given path, the -match "h" parameter is for hidden folders
-  $gitFolders = Get-ChildItem -Path $baseDir -Depth $depth -Recurse -Force | Where-Object { $_.Mode -match "h" -and $_.FullName -like "*\.git" }
+  $gitFolders = Get-ChildItem -Path $baseDir -Depth $depth -Recurse -Force | Where-Object { $_.FullName -like "*\.git" }
 
   ForEach ($gitFolder in $gitFolders) {
 
