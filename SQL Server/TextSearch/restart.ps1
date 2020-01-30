@@ -1,0 +1,1 @@
+Get-Service 'MSSQLFDLauncher$SQLSERVER' | restart-service

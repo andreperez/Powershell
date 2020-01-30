@@ -1,0 +1,1 @@
+Get-Service 'MSSQL$SQLSERVER' | Where-Object {$_.Status -EQ "Running"} | stop-service -Force

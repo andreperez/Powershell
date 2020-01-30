@@ -1,0 +1,1 @@
+Get-Service 'MSSQL$SQLSERVER' | restart-service

@@ -1,0 +1,3 @@
+# Status
+
+Get-Service *SQL*

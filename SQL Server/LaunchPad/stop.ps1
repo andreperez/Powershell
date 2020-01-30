@@ -1,0 +1,1 @@
+Get-Service 'MSSQLLaunchpad' | Where-Object {$_.Status -EQ "Running"} | stop-service -Force
