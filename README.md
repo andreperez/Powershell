@@ -31,7 +31,7 @@ Examples:
 
 *Note*: may need adminstrative privilegies to manage the services.
 
-## Running the scripts
+# Running the scripts
 
 To run a script **safely**, it's possible to unblock it without changing the execution policy.
 
